@@ -1,111 +1,112 @@
 [
   {
-    "id": "short board",
-    "name": "Short board",
-    "type": "Short board",
-    "description": "Short board from beginner to advanced surfers",
+    "id": "minor-ding-repair",
+    "name": "Minor Ding Repair",
+    "type": "Quick Fix",
+    "description": "Small punctures and pressure dings sealed fast to keep water out.",
     "dimensions": {
-      "length": "5'8-6'5\"",
-      
-      "volume": "25-38L"
+      "length": "Any size",
+      "width": "Spot repair",
+      "thickness": "Localized",
+      "volume": "N/A"
     },
-    "features": ["thruster setup", "various tail shape", "Medium rocker"],
-    "waveConditions": "2-6ft, playful surf",
-    "surfLevel": "Intermediate to Advanced",
-    "price": "5.500.000 rp",
-    "image": "images/Short.jpeg",
+    "features": ["Crack sealing", "UV-safe lamination", "Sanded finish"],
+    "waveConditions": "Deck dents, small rail chips, tiny punctures",
+    "surfLevel": "Same day to 24h",
+    "price": "From $20",
+    "image": "/images/piri-workshop-1.png",
     "gallery": [
-      "images/Short.jpeg",
-      "images/Short.jpeg",
-      "images/Short.jpeg"
+      "/images/piri-workshop-1.png",
+      "/images/piri-workshop-2.png",
+      "/images/piri-workshop-3.png"
     ]
   },
   {
-    "id": "Mid lank fun board",
-    "name": "Mid lank fun board",
-    "type": "Mid lank",
-    "description": "Mid lank fun board from beginner to advanced surfers",
+    "id": "rail-and-tail-repair",
+    "name": "Rail & Tail Repair",
+    "type": "Structural",
+    "description": "Rebuild damaged rails and tails with reinforced fiberglass layups.",
     "dimensions": {
-      "length": "6'0-8'6\"",
-      "width": "",
-      "thickness": "",
-      "volume": "32-42L"
+      "length": "Any size",
+      "width": "Rail/tail section",
+      "thickness": "Matched to board",
+      "volume": "N/A"
     },
-    "features": ["thruster fin", "Pin tail", "Pulled-in nose"],
-    "waveConditions": "Small to medium waves",
-    "surfLevel": "beginner to intermediate",
-    "price": "6.000.000 rp",
-    "image": "images/Mid.jpeg",
+    "features": ["Reinforced layers", "Shape correction", "Color blending"],
+    "waveConditions": "Cracked rails, broken tail corners, open fiberglass",
+    "surfLevel": "1 to 3 days",
+    "price": "From $35",
+    "image": "/images/piri-workshop-2.png",
     "gallery": [
-      "images/Mid.jpeg",
-      "images/Mid2.jpeg",
-      "images/gun.jpeg"
+      "/images/piri-workshop-2.png",
+      "/images/piri-workshop-1.png",
+      "/images/piri-workshop-3.png"
     ]
   },
   {
-    "id": "Epoxy long board ",
-    "name": "Epoxy long board ",
-    "type": "Longboard",
-    "description": "Classic single fin longboard for the mellower waves and endless summer sessions.",
+    "id": "broken-nose-rebuild",
+    "name": "Broken Nose Rebuild",
+    "type": "Heavy Repair",
+    "description": "Restore snapped or crushed noses with solid structural rebuilds.",
     "dimensions": {
-      "length": "9'2-10'6\"",
-      "width": "",
-      "thickness": "",
-      "volume": "68-80L"
+      "length": "Any size",
+      "width": "Front section",
+      "thickness": "Matched to board",
+      "volume": "N/A"
     },
-    "features": ["Single fin", "Square tail", "Traditional template"],
-    "waveConditions": "1-4ft, mellow surf",
-    "surfLevel": "Beginner to Intermediate",
-    "price": "7.500.000 rp",
-    "image": "images/long.jpeg",
+    "features": ["Core repair", "Fiberglass rebuild", "Hydrophobic seal"],
+    "waveConditions": "Snapped tips, deep impact fractures",
+    "surfLevel": "2 to 5 days",
+    "price": "From $45",
+    "image": "/images/piri-workshop-3.png",
     "gallery": [
-      "images/long.jpeg",
-      "images/long.jpeg",
-      "images/long.jpeg"
+      "/images/piri-workshop-3.png",
+      "/images/piri-workshop-1.png",
+      "/images/piri-workshop-2.png"
     ]
   },
   {
-    "id": "Twin fin & classic board",
-    "name": "Twin fin & classic board",
-    "type": "Twin Fin",
-    "description": "Versatile everyday board that handles most conditions around Lombok with style.",
+    "id": "fin-box-repair",
+    "name": "Fin Box Repair",
+    "type": "Precision",
+    "description": "Replace or reset damaged fin boxes and restore alignment.",
     "dimensions": {
-      "length": "5'6-7'0\"",
-      "width": "",
-      "thickness": "",
-      "volume": "32-60 L"
+      "length": "Any size",
+      "width": "Fin area",
+      "thickness": "Matched to board",
+      "volume": "N/A"
     },
-    "features": ["Twin fin", "Fish tail", "Balanced rocker"],
-    "waveConditions": "2-8ft, all conditions",
-    "surfLevel": "Intermediate",
-    "price": "5.500.000 rp",
-    "image": "images/fishB.jpeg",
+    "features": ["Box reinstallation", "Accurate cant and toe", "Strong resin bonding"],
+    "waveConditions": "Loose plugs, cracked fin box zone, impact near fins",
+    "surfLevel": "1 to 3 days",
+    "price": "From $40",
+    "image": "/images/piri-workshop-1.png",
     "gallery": [
-      "images/fishB.jpeg",
-      "images/fishB.jpeg",
-      "images/fishB.jpeg"
+      "/images/piri-workshop-1.png",
+      "/images/piri-workshop-2.png",
+      "/images/piri-workshop-3.png"
     ]
   },
   {
-    "id": "Custom hand made fin",
-    "name": "Custom hand made fin",
-    "type": "Fins",
-    "description": "Custom hand made fin from beginner to advanced surfers",
+    "id": "full-restoration",
+    "name": "Full Board Restoration",
+    "type": "Premium",
+    "description": "For boards with multiple damages needing full structural and cosmetic refresh.",
     "dimensions": {
-      "length": "",
-      "width": "",
-      "thickness": "",
-      "volume": ""
+      "length": "Any size",
+      "width": "Whole board",
+      "thickness": "Matched to board",
+      "volume": "N/A"
     },
-    "features": ["custom fin"],
-    "waveConditions": "",
-    "surfLevel": "",
-    "price": "1.000.000 rp",
-    "image": "images/fins.jpeg",
+    "features": ["Multi-zone reconstruction", "Deep drying process", "Final polish"],
+    "waveConditions": "Older boards with repeated repairs and moisture issues",
+    "surfLevel": "3 to 7 days",
+    "price": "From $80",
+    "image": "/images/piri-workshop-2.png",
     "gallery": [
-      "images/fins.jpeg",
-      "images/fins.jpeg",
-      "images/fins.jpeg"
+      "/images/piri-workshop-2.png",
+      "/images/piri-workshop-3.png",
+      "/images/piri-workshop-1.png"
     ]
   }
 ]

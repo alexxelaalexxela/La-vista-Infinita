@@ -5,23 +5,23 @@ const About = () => {
   const features = [
     {
       icon: Waves,
-      title: 'Handcrafted Excellence',
-      description: 'Every board is shaped by hand using traditional techniques passed down through generations of Indonesian craftsmen.'
+      title: 'Repair Expertise',
+      description: 'From pressure dings to rail cracks, each repair is done with careful prep, strong lamination, and clean finishing.'
     },
     {
       icon: Heart,
-      title: 'Passion for Surf',
-      description: 'Born from our love for Bali\'s incredible waves and the desire to create boards that enhance your connection with the ocean.'
+      title: 'Built by Surfers',
+      description: 'Piri&apos;s Ding Repair is run by people who surf La Libertad and understand what your board needs after heavy sessions.'
     },
     {
       icon: Users,
-      title: 'Community Roots',
-      description: 'Deeply rooted in Gerupuk Village, we support local talent and contribute to the growth of Indonesia\'s surf culture.'
+      title: 'Local Trust',
+      description: 'Surfers, travelers, and local schools rely on the workshop for honest advice, clear timelines, and quality results.'
     },
     {
       icon: Award,
-      title: 'Lombok\'s Craft',
-      description: 'Proudly rooted in Lombok, pioneering custom surfboard craftsmanship in Nusa Tenggara Barat.'
+      title: 'Quality First',
+      description: 'Every board leaves the shop watertight, sanded, and ready for the next swell.'
     }
   ];
 
@@ -32,12 +32,12 @@ const About = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Our Story
+              About The Workshop
             </h2>
             <div className="w-24 h-1 bg-ocean-medium mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              From Kuta, Lombok to the hands of master craftsmen, 
-              DC surf shop represents the fusion of tradition and innovation in surfboard and fin shaping.
+              Located in La Libertad, Piri&apos;s Ding Repair focuses on reliable surfboard repairs with practical service
+              for locals and traveling surfers.
             </p>
           </div>
 
@@ -45,28 +45,27 @@ const About = () => {
             {/* Story Content */}
             <div className="space-y-6">
               <h3 className="font-serif text-2xl font-semibold text-foreground">
-                Where Tradition Meets Innovation
+                Keep Your Board In The Water
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Born in Lombok, DC surf shop emerged from a simple yet profound vision: 
-                to create world-class surfboards and fins that honor Indonesian craftsmanship while embracing modern design principles.
+                The goal is simple: fix boards properly and fast so you can surf more and worry less.
+                We repair dings, broken noses, tail damage, cracked rails, and water intrusion.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Our master shapers combine decades of woodworking tradition with cutting-edge surfboard and fin technology, 
-                creating equipment that is not just functional, but works of art that tell the story of Lombok's 
-                rich cultural heritage and incredible waves.
+                Whether your board needs a quick patch or a full structural rebuild,
+                every job follows the same process: dry, reinforce, laminate, sand, and finish.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Every board and fin that leaves our workshop carries the spirit of Indonesian craftsmanship 
-                and the soul of Lombok's legendary surf breaks.
+                Need a custom touch after repair? We can also help with refinishing and custom requests
+                based on your board and style.
               </p>
             </div>
 
             {/* Image */}
             <div className="relative">
               <img 
-                src="/images/about.jpg" 
-                alt="DC surf shop workshop in Kuta, Lombok"
+                src="/images/piri-workshop-2.png" 
+                alt="Piri's Ding Repair workshop in La Libertad"
                 className="rounded-lg wood-shadow w-full"
               />
               <div className="absolute inset-0 rounded-lg ring-1 ring-wood-medium opacity-20"></div>

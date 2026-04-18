@@ -10,8 +10,10 @@ const Gallery = () => {
       <main className="pt-28 pb-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="font-serif text-4xl md:text-5xl font-bold">Board Art Gallery</h1>
-            <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">A selection of custom artwork and resin designs. Each piece can be adapted to your board.</p>
+            <h1 className="font-serif text-4xl md:text-5xl font-bold">Workshop Gallery</h1>
+            <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
+              Real photos from Piri&apos;s Ding Repair in La Libertad, El Salvador.
+            </p>
           </div>
 
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

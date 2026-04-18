@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Save, Mail, MessageCircle } from 'lucide-react';
+import { Save, Mail, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -52,7 +52,7 @@ const CustomBoardModal = ({ isOpen, onClose }: CustomBoardModalProps) => {
 
   const generateEmailBody = () => {
     return encodeURIComponent(`
-DC surf shop Custom Board Request
+Piri's Ding Repair Custom Board Request
 
 Personal Information:
 - Name: ${formData.name}
@@ -85,7 +85,7 @@ ${formData.name}
   };
 
   const generateWhatsAppMessage = () => {
-    return encodeURIComponent(`Hello DC surf shop! I'd like to order a custom board:
+    return encodeURIComponent(`Hi Piri's Ding Repair! I'd like to order a custom board:
 
 📋 Personal Info:
 Name: ${formData.name}
@@ -108,14 +108,14 @@ Please send me a quote and timeline!`);
 
   const handleSaveLocally = () => {
     try {
-      const existingRequests = JSON.parse(localStorage.getItem('dcSurfShopRequests') || '[]');
+      const existingRequests = JSON.parse(localStorage.getItem('piriDingRepairRequests') || '[]');
       const newRequest = {
         ...formData,
         id: Date.now(),
         timestamp: new Date().toISOString()
       };
       existingRequests.push(newRequest);
-      localStorage.setItem('dcSurfShopRequests', JSON.stringify(existingRequests));
+      localStorage.setItem('piriDingRepairRequests', JSON.stringify(existingRequests));
       
       toast({
         title: "Request Saved",
@@ -140,7 +140,7 @@ Please send me a quote and timeline!`);
       return;
     }
     
-    const mailtoUrl = `mailto:?subject=${encodeURIComponent('DC surf shop Custom Board Request')}&body=${generateEmailBody()}`;
+    const mailtoUrl = `mailto:?subject=${encodeURIComponent('Piri\'s Ding Repair Custom Board Request')}&body=${generateEmailBody()}`;
     window.location.href = mailtoUrl;
     handleSaveLocally();
   };
@@ -155,7 +155,7 @@ Please send me a quote and timeline!`);
       return;
     }
     
-    const whatsappUrl = `https://wa.me/6287862300023?text=${generateWhatsAppMessage()}`;
+    const whatsappUrl = `https://wa.me/50376717527?text=${generateWhatsAppMessage()}`;
     window.open(whatsappUrl, '_blank');
     handleSaveLocally();
   };

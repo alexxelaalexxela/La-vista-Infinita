@@ -20,12 +20,12 @@ const BoardGrid = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Our Boards
+              Repair Options
             </h2>
             <div className="w-24 h-1 bg-ocean-medium mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Each board is carefully crafted to match specific wave conditions and riding styles. 
-              From playful fish to powerful guns, find your perfect ride.
+              Common repair categories we handle in the workshop.
+              Every board is inspected first, then quoted with a realistic turnaround.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const BoardGrid = () => {
                     className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white text-foreground hover:bg-sand-light"
                   >
                     <Eye className="w-4 h-4 mr-2" />
-                    View Details
+                    View Repair Details
                   </Button>
                 </div>
 
@@ -102,22 +102,22 @@ const BoardGrid = () => {
           {/* Call to Action */}
           <div className="text-center bg-white rounded-lg p-8 wood-shadow">
             <h3 className="font-serif text-2xl font-bold text-foreground mb-4">
-              Ready for Your Custom Board?
+              Need A Fast Quote?
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Can't find exactly what you're looking for? Let our master shapers create 
-              a board tailored specifically to your style, waves, and preferences.
+              Send us a few photos of the damaged area and we&apos;ll confirm
+              pricing, timeline, and the best repair approach for your board.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="ocean-gradient text-white">
-                <Link to="/custom">
-                  Order Custom Board
+                <a href="https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20Can%20I%20get%20a%20quote%20for%20my%20board%20repair%3F">
+                  Get Quote On WhatsApp
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link to="/contact">
-                  Consult with Shaper
+                  Visit The Workshop
                 </Link>
               </Button>
             </div>
@@ -192,10 +192,10 @@ const BoardGrid = () => {
               <div className="mt-6 p-4 bg-sand-light rounded-lg">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <strong>Wave Conditions:</strong> {selectedBoard.waveConditions}
+                    <strong>Typical Damage:</strong> {selectedBoard.waveConditions}
                   </div>
                   <div>
-                    <strong>Surf Level:</strong> {selectedBoard.surfLevel}
+                    <strong>Recommended Turnaround:</strong> {selectedBoard.surfLevel}
                   </div>
                 </div>
               </div>
@@ -203,9 +203,9 @@ const BoardGrid = () => {
               <div className="flex gap-4 mt-6">
                 <Button 
                   className="flex-1 ocean-gradient text-white"
-                  onClick={() => window.open(`https://wa.me/6287862300023?text=${encodeURIComponent(`Hello DC surf shop, I'm interested in the ${selectedBoard.name} board. Please send me more information.`)}`, '_blank')}
+                  onClick={() => window.open(`https://wa.me/50376717527?text=${encodeURIComponent(`Hi Piri's Ding Repair! I'd like a quote for: ${selectedBoard.name}.`)}`, '_blank')}
                 >
-                  Order This Board
+                  Request This Repair
                 </Button>
                 <Button variant="outline" onClick={() => setSelectedBoard(null)}>
                   Close

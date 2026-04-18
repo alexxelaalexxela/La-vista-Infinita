@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, MessageCircle, ArrowRight } from 'lucide-react';
+import { MessageCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const SurfLessons = () => {
@@ -10,7 +10,7 @@ const SurfLessons = () => {
           <div>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Surf Lessons</h2>
             <p className="text-muted-foreground mb-6">
-              Learn to surf or improve your skills with local instructors who know Lombok's waves. All levels welcome.
+              Need coaching in La Libertad? We can connect you with trusted local instructors.
             </p>
             <ul className="space-y-2 text-muted-foreground mb-6">
               <li>• Certified instructors</li>
@@ -20,7 +20,7 @@ const SurfLessons = () => {
             </ul>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button asChild>
-                <a href="https://wa.me/6287862300023?text=Hello%20DC%20surf%20shop%2C%20I'd%20like%20to%20book%20surf%20lessons.">
+                <a href="https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20Can%20you%20help%20me%20book%20a%20surf%20lesson%3F">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Book on WhatsApp
                 </a>

@@ -85,7 +85,7 @@ const Custom = () => {
 
   const composeWhatsAppMessage = () => {
     const lines = [
-      'DC surf shop Custom Surfboard Request',
+      'Piri\'s Ding Repair - Custom Request',
       '',
       'Personal Information:',
       `- Name: ${formData.name}`,
@@ -129,7 +129,7 @@ const Custom = () => {
   const handleSubmitWhatsApp = () => {
     if (!formData.name) return;
     const msg = composeWhatsAppMessage();
-    const url = `https://wa.me/6287862300023?text=${msg}`;
+    const url = `https://wa.me/50376717527?text=${msg}`;
     window.open(url, '_blank');
   };
 
@@ -140,9 +140,9 @@ const Custom = () => {
         <div className="container mx-auto px-4">
           {/* Page Header */}
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Looking for something special?</h1>
+            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Need a custom job?</h1>
             <p className="text-muted-foreground">
-              We're here for you. Browse some of our favorite models, artwork, and fill out our custom surfboard order form below.
+              Tell us what you need and we&apos;ll build a custom plan for your board in La Libertad.
             </p>
           </div>
 
@@ -150,18 +150,18 @@ const Custom = () => {
           <section className="max-w-3xl mx-auto mb-12">
             <h2 className="font-serif text-2xl font-semibold mb-4">How it works</h2>
             <ol className="list-decimal pl-5 space-y-2 text-muted-foreground">
-              <li>Come up with the surfboard of your dreams.</li>
-              <li>Fill out and submit the Custom Surfboard order form below.</li>
+              <li>Describe the board specs or repair/custom request you need.</li>
+              <li>Fill out and submit the request form below.</li>
               <li>We will message you to confirm details and a quote.</li>
-              <li>Pay the deposit to start your build.</li>
-              <li>We will let you know when your surfboard is ready.</li>
+              <li>Drop off the board (or share more photos if needed).</li>
+              <li>We message you as soon as your board is ready.</li>
             </ol>
-            <p className="mt-4 text-sm text-muted-foreground">Free in-store pickup available. Shipping is available for an additional cost.</p>
+            <p className="mt-4 text-sm text-muted-foreground">Workshop: FMPG+8F7, 5 Ave Sur, La Libertad, El Salvador.</p>
           </section>
 
           {/* SURFBOARD ORDER FORM */}
           <div className="max-w-4xl mx-auto bg-white rounded-lg p-6 md:p-8 border">
-            <h2 className="font-serif text-2xl font-semibold mb-6">SURFBOARD ORDER FORM</h2>
+            <h2 className="font-serif text-2xl font-semibold mb-6">CUSTOM REQUEST FORM</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Left column */}
               <div className="space-y-6">
@@ -378,31 +378,31 @@ const Custom = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 mt-8">
-              <Button onClick={handleSubmitWhatsApp} className="flex-1">Submit Order via WhatsApp</Button>
+              <Button onClick={handleSubmitWhatsApp} className="flex-1">Submit Request via WhatsApp</Button>
             </div>
 
-            <p className="text-xs text-muted-foreground text-center mt-3">We’ll reply with a quote and timeline within 24 hours.</p>
+            <p className="text-xs text-muted-foreground text-center mt-3">We&apos;ll reply with a quote and timeline within 24 hours.</p>
           </div>
 
           {/* Models */}
           <section className="max-w-6xl mx-auto mb-12 mt-20">
-            <h2 className="font-serif text-2xl font-semibold mb-6">Some of our favorite models</h2>
+            <h2 className="font-serif text-2xl font-semibold mb-6">Popular custom requests</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border rounded-lg p-6 bg-white">
-                <h3 className="font-serif text-xl font-semibold mb-2">Pyzel Ghost</h3>
-                <p className="text-muted-foreground">The Ghost is possibly the first truly High Performance board that works great for all levels of surfer and could be considered a one-board quiver for any surf trip with decent to good waves on the menu.</p>
+                <h3 className="font-serif text-xl font-semibold mb-2">Performance Shortboard Tune-Up</h3>
+                <p className="text-muted-foreground">Precision repair and refinishing for daily-driver shortboards used around Punta Roca and nearby breaks.</p>
               </div>
               <div className="border rounded-lg p-6 bg-white">
-                <h3 className="font-serif text-xl font-semibold mb-2">Drifter Kingfisher</h3>
-                <p className="text-muted-foreground">A Fish with a high intellect. Steering away from the stock standard wide and flat Fish of the past, the Kingfisher has a great blend of modern rails, performance rocker and comfort in the pocket.</p>
+                <h3 className="font-serif text-xl font-semibold mb-2">Fish Restoration</h3>
+                <p className="text-muted-foreground">Tail crack rebuilds, rail touch-ups, and polish for twin-fin and fish outlines.</p>
               </div>
               <div className="border rounded-lg p-6 bg-white">
-                <h3 className="font-serif text-xl font-semibold mb-2">Pyzel Padillac</h3>
-                <p className="text-muted-foreground">Like the name implies, this board is built to paddle fast and easy, with extra thickness and a fuller outline than most standard guns so you can catch and ride bigger waves with confidence and ease.</p>
+                <h3 className="font-serif text-xl font-semibold mb-2">Longboard Rail Rebuild</h3>
+                <p className="text-muted-foreground">Durable rail repair for larger boards with improved sealing against future water intrusion.</p>
               </div>
               <div className="border rounded-lg p-6 bg-white">
-                <h3 className="font-serif text-xl font-semibold mb-2">Drifter Bodhi</h3>
-                <p className="text-muted-foreground">Faster than you can imagine with the feel of a performance shortboard. We found a good balance between being able to easily generate speed without excessive pumping but still holding off the bottom.</p>
+                <h3 className="font-serif text-xl font-semibold mb-2">Custom Workshop Projects</h3>
+                <p className="text-muted-foreground">Special requests available, including custom board planning and one-off workshop builds.</p>
               </div>
             </div>
           </section>

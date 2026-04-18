@@ -1,41 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Waves, Palette, Wrench, MapPin, GraduationCap, ArrowRight } from 'lucide-react';
+import { Waves, Wrench, Sparkles, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import CustomBoardModal from './CustomBoardModal';
 
 const ServiceCards = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const services = [
     {
-      icon: Waves,
-      title: 'Custom Boards',
-      description: 'Bespoke surfboards crafted to your exact specifications — shape, size, fins, artwork.',
-      features: ['Personal consultation', 'Custom dimensions', 'Premium materials', 'Craftsmanship guarantee'],
-      cta: 'Order a Custom Board',
-      action: () => window.location.assign('/custom'),
-      gradient: ''
-    },
-    
-    {
-      icon: Waves,
-      title: 'Our Boards',
-      description: 'Browse our current models and specs. Find the perfect board for your waves and style.',
-      features: ['Fish, Shortboards, Longboards', 'Specs & volumes', 'Tail & fin options', 'Ready to customize'],
-      cta: 'View Our Boards',
-      action: () => window.location.assign('/boards'),
-      gradient: ''
-    },
-    {
       icon: Wrench,
-      title: 'Professional Ding Repairs',
-      description: 'Professional surfboard repairs using traditional techniques and modern materials to restore your board to peak condition.',
-      features: ['Quick turnaround', 'Quality materials', 'Color matching', 'Structural integrity'],
+      title: 'Ding Repairs',
+      description: 'Fast and durable repairs for cracks, punctures, snapped tips, and waterlogged zones.',
+      features: ['Epoxy and PU boards', 'Rail and nose repairs', 'Leak sealing', 'Solid finish'],
+      cta: 'See Repair Types',
+      action: () => window.location.assign('/boards')
+    },
+    {
+      icon: Sparkles,
+      title: 'Refinish & Restoration',
+      description: 'Bring older boards back to life with sanding, gloss touch-ups, and cosmetic restoration.',
+      features: ['Deck cleanup', 'Surface polish', 'Color touch-up', 'Ready-to-surf finish'],
       cta: 'Get Repair Quote',
-      action: () => window.open('https://wa.me/6287862300023?text=Hello%20DC%20surf%20shop%2C%20I%20need%20ding%20repair%20for%20my%20board.%20Please%20provide%20a%20quote.', '_blank'),
-      gradient: 'sand-gradient'
+      action: () => window.open('https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20I%20need%20a%20repair%20quote%20for%20my%20surfboard.', '_blank')
+    },
+    {
+      icon: Waves,
+      title: 'Custom Requests',
+      description: 'Need more than a repair? Ask for custom dimensions, adjustments, or special workshop jobs.',
+      features: ['Custom board requests', 'Setup consultation', 'Tailored recommendations', 'WhatsApp follow-up'],
+      cta: 'Start A Custom Request',
+      action: () => window.location.assign('/custom')
     }
   ];
 
@@ -47,12 +40,12 @@ const ServiceCards = () => {
             {/* Header */}
             <div className="text-center mb-16">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Our Services
+                Workshop Services
               </h2>
               <div className="w-24 h-1 bg-ocean-medium mx-auto mb-6"></div>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                From handcrafted boards and fins to professional repairs,
-                we offer everything you need for your surfing journey in Lombok.
+                Piri&apos;s Ding Repair focuses on one thing: getting your surfboard back in shape
+                quickly, cleanly, and with reliable workmanship.
               </p>
             </div>
 
@@ -94,12 +87,12 @@ const ServiceCards = () => {
             {/* Call to Action */}
             <div className="text-center mt-16">
               <p className="text-lg text-muted-foreground mb-6">
-                Have questions about our services? We're here to help.
+                Need a timeline or estimate? Send a photo of your board and we&apos;ll answer quickly.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="ocean-gradient text-white">
                   <Link to="/contact">
-                    Contact Us
+                    Contact Piri&apos;s Ding Repair
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
@@ -110,7 +103,6 @@ const ServiceCards = () => {
         </div>
       </section>
 
-      <CustomBoardModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 };
