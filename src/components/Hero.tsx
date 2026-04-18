@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import piriLogo from '@/assets/piri-logo.png';
 
 const Hero = () => {
   const mapUrl = 'https://www.google.com/maps/search/?api=1&query=FMPG%2B8F7%2C%205%20Ave%20Sur%2C%20La%20Libertad%2C%20El%20Salvador';
@@ -18,6 +19,11 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+        <img
+          src={piriLogo}
+          alt="Piri's Ding Repair logo"
+          className="h-24 w-24 md:h-28 md:w-28 rounded-full object-cover border border-white/60 mx-auto mb-6"
+        />
         <a
           href={mapUrl}
           target="_blank"

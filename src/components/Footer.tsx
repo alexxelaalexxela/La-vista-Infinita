@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, Phone } from 'lucide-react';
+import piriLogo from '@/assets/piri-logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,9 +13,11 @@ const Footer = () => {
           {/* Brand & Logo */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="h-10 w-10 rounded-full bg-white/10 text-white flex items-center justify-center font-semibold">
-                P
-              </div>
+              <img
+                src={piriLogo}
+                alt="Piri's Ding Repair logo"
+                className="h-10 w-10 rounded-full object-cover border border-white/20"
+              />
               <div>
                 <h3 className="font-serif text-xl font-bold">PIRI&apos;S DING REPAIR</h3>
                 <p className="text-sm opacity-80">SURFBOARD REPAIR WORKSHOP</p>

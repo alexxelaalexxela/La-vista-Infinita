@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Wrench } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import piriLogo from '@/assets/piri-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,9 +24,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group" title="Go to homepage">
-            <div className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center transition-transform group-hover:scale-105">
-              <Wrench className="h-5 w-5" />
-            </div>
+            <img
+              src={piriLogo}
+              alt="Piri's Ding Repair logo"
+              className="h-10 w-10 rounded-full object-cover border transition-transform group-hover:scale-105"
+            />
             <div>
               <h1 className="font-serif text-xl font-bold text-foreground">PIRI&apos;S DING REPAIR</h1>
               <p className="text-xs text-muted-foreground -mt-1">LA LIBERTAD, EL SALVADOR</p>
