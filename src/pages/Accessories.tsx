@@ -20,7 +20,7 @@ const Accessories = () => {
           <div className="text-center mb-12">
             <h1 className="font-serif text-4xl md:text-5xl font-bold">Accessories</h1>
             <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-              Tee-shirts and surf accessories available at Piri&apos;s Ding Repair.
+              Tee-shirts and surf accessories available at Piry&apos;s Ding Repair.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ const Accessories = () => {
               <h2 className="font-serif text-2xl font-semibold">Tee-shirts ($15)</h2>
               <Button asChild variant="outline">
                 <a
-                  href="https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20How%20much%20for%20tee-shirts%20($15)%20and%20what%20sizes%20are%20available%3F"
+                  href="https://wa.me/50376717527?text=Hi%20Piry%27s%20Ding%20Repair!%20How%20much%20for%20tee-shirts%20($15)%20and%20what%20sizes%20are%20available%3F"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -40,7 +40,7 @@ const Accessories = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {tshirtImages.map((image, idx) => (
                 <div key={image} className="rounded-lg border bg-white overflow-hidden">
-                  <img src={image} alt={`Piri tee-shirt ${idx + 1}`} className="w-full h-64 object-cover" />
+                  <img src={image} alt={`Piry tee-shirt ${idx + 1}`} className="w-full h-64 object-cover" />
                 </div>
               ))}
             </div>
@@ -57,7 +57,7 @@ const Accessories = () => {
             </ul>
             <Button asChild className="mt-6">
               <a
-                href="https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20How%20much%20for%20wax,%20screws,%20longboard%20screw,%20FCS%20screws,%20and%20Futures%20screws%3F"
+                href="https://wa.me/50376717527?text=Hi%20Piry%27s%20Ding%20Repair!%20How%20much%20for%20wax,%20screws,%20longboard%20screw,%20FCS%20screws,%20and%20Futures%20screws%3F"
                 target="_blank"
                 rel="noreferrer"
               >

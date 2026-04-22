@@ -11,7 +11,7 @@ const About = () => {
     {
       icon: Heart,
       title: 'Built by Surfers',
-      description: 'Piri&apos;s Ding Repair is run by people who surf La Libertad and understand what your board needs after heavy sessions.'
+      description: 'Piry&apos;s Ding Repair is run by people who surf La Libertad and understand what your board needs after heavy sessions.'
     },
     {
       icon: Users,
@@ -36,7 +36,7 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-ocean-medium mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Located in La Libertad, Piri&apos;s Ding Repair focuses on reliable surfboard repairs with practical service
+              Located in La Libertad, Piry&apos;s Ding Repair focuses on reliable surfboard repairs with practical service
               for locals and traveling surfers.
             </p>
           </div>
@@ -65,7 +65,7 @@ const About = () => {
             <div className="relative">
               <img 
                 src="/images/piri-workshop-2.png" 
-                alt="Piri's Ding Repair workshop in La Libertad"
+                alt="Piry's Ding Repair workshop in La Libertad"
                 className="rounded-lg wood-shadow w-full"
               />
               <div className="absolute inset-0 rounded-lg ring-1 ring-wood-medium opacity-20"></div>

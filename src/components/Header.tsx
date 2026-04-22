@@ -26,11 +26,11 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3 group" title="Go to homepage">
             <img
               src={piriLogo}
-              alt="Piri's Ding Repair logo"
+              alt="Piry's Ding Repair logo"
               className="h-10 w-10 rounded-full object-cover border transition-transform group-hover:scale-105"
             />
             <div>
-              <h1 className="font-serif text-xl font-bold text-foreground">PIRI&apos;S DING REPAIR</h1>
+              <h1 className="font-serif text-xl font-bold text-foreground">PIRY&apos;S DING REPAIR</h1>
               <p className="text-xs text-muted-foreground -mt-1">LA LIBERTAD, EL SALVADOR</p>
             </div>
           </Link>

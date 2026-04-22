@@ -11,7 +11,7 @@ const Contact = () => {
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">Contact Piri&apos;s Ding Repair</h1>
+            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">Contact Piry&apos;s Ding Repair</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Send your board photos on WhatsApp for an estimate and timeline.
             </p>
@@ -25,7 +25,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-serif text-xl font-semibold mb-2">Visit The Workshop</h3>
                   <p className="text-muted-foreground">
-                    Piri&apos;s Ding Repair<br />
+                    Piry&apos;s Ding Repair<br />
                     FMPG+8F7, 5 Ave Sur<br />
                     La Libertad, El Salvador
                   </p>
@@ -64,7 +64,7 @@ const Contact = () => {
               <h3 className="font-serif text-xl font-semibold mb-4">Find Us In La Libertad</h3>
               <div className="aspect-video rounded-md overflow-hidden">
                 <iframe
-                  title="Piri's Ding Repair La Libertad Location"
+                  title="Piry's Ding Repair La Libertad Location"
                   src="https://www.google.com/maps?q=FMPG%2B8F7%2C%205%20Ave%20Sur%2C%20La%20Libertad%2C%20El%20Salvador&z=15&output=embed"
                   width="100%"
                   height="100%"

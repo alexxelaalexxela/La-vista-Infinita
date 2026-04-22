@@ -3,7 +3,7 @@
     "id": "workshop-overview",
     "name": "Main Repair Bay",
     "technique": "Workshop Photo",
-    "description": "Inside Piri's Ding Repair, where boards are inspected, repaired, and prepared for the next swell.",
+    "description": "Inside Piry's Ding Repair, where boards are inspected, repaired, and prepared for the next swell.",
     "image": "/images/piri-workshop-1.png",
     "colors": ["Natural Light", "Ocean Blue", "Workshop Tones"],
     "timeToComplete": "Quote on request",
@@ -11,9 +11,9 @@
   },
   {
     "id": "tee-shirt-1",
-    "name": "Piri Tee-shirt Front Print",
+    "name": "Piry Tee-shirt Front Print",
     "technique": "Accessories Photo",
-    "description": "Official Piri's Ding Repair tee-shirt. Price: $15.",
+    "description": "Official Piry's Ding Repair tee-shirt. Price: $15.",
     "image": "/images/piri-shirt-1.png",
     "colors": ["Black", "White"],
     "timeToComplete": "In stock",
@@ -21,7 +21,7 @@
   },
   {
     "id": "tee-shirt-2",
-    "name": "Piri Tee-shirt Closeup",
+    "name": "Piry Tee-shirt Closeup",
     "technique": "Accessories Photo",
     "description": "Closeup of logo print version available in shop.",
     "image": "/images/piri-shirt-2.png",
@@ -31,7 +31,7 @@
   },
   {
     "id": "tank-top-1",
-    "name": "Piri Tank Top",
+    "name": "Piry Tank Top",
     "technique": "Accessories Photo",
     "description": "Sleeveless version with front chest logo. Price: $15.",
     "image": "/images/piri-shirt-3.png",
@@ -41,7 +41,7 @@
   },
   {
     "id": "tee-shirt-back-1",
-    "name": "Piri Tee-shirt Back Print",
+    "name": "Piry Tee-shirt Back Print",
     "technique": "Accessories Photo",
     "description": "Large back print version with Punta Roca design.",
     "image": "/images/piri-shirt-4.png",
@@ -51,7 +51,7 @@
   },
   {
     "id": "tank-top-back-1",
-    "name": "Piri Tank Top Back Print",
+    "name": "Piry Tank Top Back Print",
     "technique": "Accessories Photo",
     "description": "Large back print tank top version. Price: $15.",
     "image": "/images/piri-shirt-5.png",

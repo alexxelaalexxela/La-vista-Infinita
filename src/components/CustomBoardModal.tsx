@@ -52,7 +52,7 @@ const CustomBoardModal = ({ isOpen, onClose }: CustomBoardModalProps) => {
 
   const generateEmailBody = () => {
     return encodeURIComponent(`
-Piri's Ding Repair Custom Board Request
+Piry's Ding Repair Custom Board Request
 
 Personal Information:
 - Name: ${formData.name}
@@ -85,7 +85,7 @@ ${formData.name}
   };
 
   const generateWhatsAppMessage = () => {
-    return encodeURIComponent(`Hi Piri's Ding Repair! I'd like to order a custom board:
+    return encodeURIComponent(`Hi Piry's Ding Repair! I'd like to order a custom board:
 
 📋 Personal Info:
 Name: ${formData.name}
@@ -140,7 +140,7 @@ Please send me a quote and timeline!`);
       return;
     }
     
-    const mailtoUrl = `mailto:?subject=${encodeURIComponent('Piri\'s Ding Repair Custom Board Request')}&body=${generateEmailBody()}`;
+    const mailtoUrl = `mailto:?subject=${encodeURIComponent('Piry\'s Ding Repair Custom Board Request')}&body=${generateEmailBody()}`;
     window.location.href = mailtoUrl;
     handleSaveLocally();
   };

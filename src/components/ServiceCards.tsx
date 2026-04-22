@@ -20,12 +20,12 @@ const ServiceCards = () => {
       description: 'Lessons available with local coaches.',
       features: ['Group lesson for beginners', 'Individual lesson 1h30', 'Friendly local coaching', 'Ask how much on WhatsApp'],
       cta: 'Ask Lesson Price',
-      action: () => window.open('https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20How%20much%20is%20a%20group%20lesson%20for%20beginners%20and%20an%20individual%201h30%20lesson%3F', '_blank')
+      action: () => window.open('https://wa.me/50376717527?text=Hi%20Piry%27s%20Ding%20Repair!%20How%20much%20is%20a%20group%20lesson%20for%20beginners%20and%20an%20individual%201h30%20lesson%3F', '_blank')
     },
     {
       icon: ShoppingBag,
       title: 'Accessories',
-      description: 'Small essentials and Piri’s Ding Repair tee-shirts.',
+      description: 'Small essentials and Piry’s Ding Repair tee-shirts.',
       features: ['Wax, screws, longboard screw', 'FCS and Futures fin screws', 'Tee-shirt: $15', 'Ask how much on WhatsApp'],
       cta: 'View Accessories',
       action: () => window.location.assign('/accessories')
@@ -91,7 +91,7 @@ const ServiceCards = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="ocean-gradient text-white">
                   <Link to="/contact">
-                    Contact Piri&apos;s Ding Repair
+                    Contact Piry&apos;s Ding Repair
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>

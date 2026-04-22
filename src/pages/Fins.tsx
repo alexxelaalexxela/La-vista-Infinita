@@ -57,7 +57,7 @@ const Fins = () => {
 
   const composeWhatsAppMessage = () => {
     const lines = [
-      'Piri\'s Ding Repair - Custom Fins Request',
+      'Piry\'s Ding Repair - Custom Fins Request',
       '',
       'Contact:',
       `- Name: ${formData.name}`,

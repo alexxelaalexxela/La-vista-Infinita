@@ -20,7 +20,7 @@ const SurfLessons = () => {
             </ul>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button asChild>
-                <a href="https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20Can%20you%20help%20me%20book%20a%20surf%20lesson%3F">
+                <a href="https://wa.me/50376717527?text=Hi%20Piry%27s%20Ding%20Repair!%20Can%20you%20help%20me%20book%20a%20surf%20lesson%3F">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Book on WhatsApp
                 </a>

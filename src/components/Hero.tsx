@@ -13,7 +13,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/homePage.png')`
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/images/pirys-hero.png')`
         }}
       />
       
@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <img
           src={piriLogo}
-          alt="Piri's Ding Repair logo"
+          alt="Piry's Ding Repair logo"
           className="h-24 w-24 md:h-28 md:w-28 rounded-full object-cover border border-white/60 mx-auto mb-6"
         />
         <a
@@ -36,7 +36,7 @@ const Hero = () => {
           </span>
         </a>
         
-        <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 leading-tight">Piri&apos;s Ding Repair</h1>
+        <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 leading-tight">Piry&apos;s Ding Repair</h1>
         <p className="text-lg md:text-xl opacity-90 mb-5 max-w-2xl mx-auto leading-relaxed">
           Fast and reliable surfboard ding repairs, lessons info, and accessories in La Libertad.
         </p>

@@ -85,7 +85,7 @@ const Custom = () => {
 
   const composeWhatsAppMessage = () => {
     const lines = [
-      'Piri\'s Ding Repair - Custom Request',
+      'Piry\'s Ding Repair - Custom Request',
       '',
       'Personal Information:',
       `- Name: ${formData.name}`,
