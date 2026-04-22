@@ -38,7 +38,7 @@ const Hero = () => {
         
         <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 leading-tight">Piri&apos;s Ding Repair</h1>
         <p className="text-lg md:text-xl opacity-90 mb-5 max-w-2xl mx-auto leading-relaxed">
-          Fast and reliable surfboard ding repairs, refinishing, and custom work in La Libertad.
+          Fast and reliable surfboard ding repairs, lessons info, and accessories in La Libertad.
         </p>
         <a
           href="https://wa.me/50376717527"

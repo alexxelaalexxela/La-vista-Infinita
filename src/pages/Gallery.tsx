@@ -12,7 +12,7 @@ const Gallery = () => {
           <div className="text-center mb-12">
             <h1 className="font-serif text-4xl md:text-5xl font-bold">Workshop Gallery</h1>
             <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-              Real photos from Piri&apos;s Ding Repair in La Libertad, El Salvador.
+              Real photos from Piri&apos;s Ding Repair in La Libertad, including workshop shots and tee-shirts ($15).
             </p>
           </div>
 

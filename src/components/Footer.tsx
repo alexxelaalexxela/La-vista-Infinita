@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm opacity-80 mb-4">
-              Reliable ding repairs, board restoration, and custom work in La Libertad, El Salvador.
+              Reliable ding repairs, lessons info, and accessories in La Libertad, El Salvador.
             </p>
             
           </div>
@@ -33,11 +33,6 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li>
-                <Link to="/custom" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  Custom Requests
-                </Link>
-              </li>
               <li>
                 <Link to="/gallery" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
                   Workshop Gallery

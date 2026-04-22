@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Waves, Wrench, Sparkles, ArrowRight } from 'lucide-react';
+import { Waves, Wrench, ShoppingBag, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -8,27 +8,27 @@ const ServiceCards = () => {
   const services = [
     {
       icon: Wrench,
-      title: 'Ding Repairs',
-      description: 'Fast and durable repairs for cracks, punctures, snapped tips, and waterlogged zones.',
-      features: ['Epoxy and PU boards', 'Rail and nose repairs', 'Leak sealing', 'Solid finish'],
+      title: 'Surf Repair',
+      description: 'Main repairs we do every day with quick WhatsApp quotes.',
+      features: ['Box fixing', 'Nose fixing', 'Sanded finish', 'Ask how much on WhatsApp'],
       cta: 'See Repair Types',
       action: () => window.location.assign('/boards')
     },
     {
-      icon: Sparkles,
-      title: 'Refinish & Restoration',
-      description: 'Bring older boards back to life with sanding, gloss touch-ups, and cosmetic restoration.',
-      features: ['Deck cleanup', 'Surface polish', 'Color touch-up', 'Ready-to-surf finish'],
-      cta: 'Get Repair Quote',
-      action: () => window.open('https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20I%20need%20a%20repair%20quote%20for%20my%20surfboard.', '_blank')
+      icon: Waves,
+      title: 'Surf Lesson',
+      description: 'Lessons available with local coaches.',
+      features: ['Group lesson for beginners', 'Individual lesson 1h30', 'Friendly local coaching', 'Ask how much on WhatsApp'],
+      cta: 'Ask Lesson Price',
+      action: () => window.open('https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20How%20much%20is%20a%20group%20lesson%20for%20beginners%20and%20an%20individual%201h30%20lesson%3F', '_blank')
     },
     {
-      icon: Waves,
-      title: 'Custom Requests',
-      description: 'Need more than a repair? Ask for custom dimensions, adjustments, or special workshop jobs.',
-      features: ['Custom board requests', 'Setup consultation', 'Tailored recommendations', 'WhatsApp follow-up'],
-      cta: 'Start A Custom Request',
-      action: () => window.location.assign('/custom')
+      icon: ShoppingBag,
+      title: 'Accessories',
+      description: 'Small essentials and Piri’s Ding Repair tee-shirts.',
+      features: ['Wax, screws, longboard screw', 'FCS and Futures fin screws', 'Tee-shirt: $15', 'Ask how much on WhatsApp'],
+      cta: 'Ask Accessories Price',
+      action: () => window.open('https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20How%20much%20for%20accessories%20(wax,%20longboard%20screw,%20FCS/Futures%20screws)%20and%20tee-shirts%20at%20$15%3F', '_blank')
     }
   ];
 
@@ -44,8 +44,7 @@ const ServiceCards = () => {
               </h2>
               <div className="w-24 h-1 bg-ocean-medium mx-auto mb-6"></div>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Piri&apos;s Ding Repair focuses on one thing: getting your surfboard back in shape
-                quickly, cleanly, and with reliable workmanship.
+                Repair, lesson booking, and accessories in one place.
               </p>
             </div>
 
@@ -71,6 +70,13 @@ const ServiceCards = () => {
                         </li>
                       ))}
                     </ul>
+                    {service.title === 'Accessories' && (
+                      <img
+                        src="/images/piri-shirt-2.png"
+                        alt="Piri's Ding Repair tee-shirt"
+                        className="rounded-md border mb-6 w-full h-40 object-cover"
+                      />
+                    )}
                     <Button 
                       onClick={service.action}
                       className="w-full group"

@@ -110,7 +110,7 @@ const BoardGrid = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="ocean-gradient text-white">
-                <a href="https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20Can%20I%20get%20a%20quote%20for%20my%20board%20repair%3F">
+                <a href="https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20How%20much%20for%20box%20fixing,%20nose%20fixing,%20or%20sanded%20finish%3F">
                   Get Quote On WhatsApp
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
@@ -203,7 +203,7 @@ const BoardGrid = () => {
               <div className="flex gap-4 mt-6">
                 <Button 
                   className="flex-1 ocean-gradient text-white"
-                  onClick={() => window.open(`https://wa.me/50376717527?text=${encodeURIComponent(`Hi Piri's Ding Repair! I'd like a quote for: ${selectedBoard.name}.`)}`, '_blank')}
+                  onClick={() => window.open(`https://wa.me/50376717527?text=${encodeURIComponent(`Hi Piri's Ding Repair! How much for ${selectedBoard.name}?`)}`, '_blank')}
                 >
                   Request This Repair
                 </Button>

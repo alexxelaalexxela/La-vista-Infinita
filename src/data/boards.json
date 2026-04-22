@@ -1,19 +1,19 @@
 [
   {
-    "id": "minor-ding-repair",
-    "name": "Minor Ding Repair",
-    "type": "Quick Fix",
-    "description": "Small punctures and pressure dings sealed fast to keep water out.",
+    "id": "box-fixing",
+    "name": "Box Fixing",
+    "type": "Repair",
+    "description": "Fin box repair and reset with strong bonding and correct alignment.",
     "dimensions": {
       "length": "Any size",
-      "width": "Spot repair",
-      "thickness": "Localized",
+      "width": "Fin area",
+      "thickness": "Matched to board",
       "volume": "N/A"
     },
-    "features": ["Crack sealing", "UV-safe lamination", "Sanded finish"],
-    "waveConditions": "Deck dents, small rail chips, tiny punctures",
-    "surfLevel": "Same day to 24h",
-    "price": "From $20",
+    "features": ["Fin box reset", "Strong resin bonding", "Watertight sealing"],
+    "waveConditions": "Loose fin box, cracked fin area, impact near fin plugs",
+    "surfLevel": "1 to 3 days",
+    "price": "Ask how much",
     "image": "/images/piri-workshop-1.png",
     "gallery": [
       "/images/piri-workshop-1.png",
@@ -22,42 +22,20 @@
     ]
   },
   {
-    "id": "rail-and-tail-repair",
-    "name": "Rail & Tail Repair",
-    "type": "Structural",
-    "description": "Rebuild damaged rails and tails with reinforced fiberglass layups.",
-    "dimensions": {
-      "length": "Any size",
-      "width": "Rail/tail section",
-      "thickness": "Matched to board",
-      "volume": "N/A"
-    },
-    "features": ["Reinforced layers", "Shape correction", "Color blending"],
-    "waveConditions": "Cracked rails, broken tail corners, open fiberglass",
-    "surfLevel": "1 to 3 days",
-    "price": "From $35",
-    "image": "/images/piri-workshop-2.png",
-    "gallery": [
-      "/images/piri-workshop-2.png",
-      "/images/piri-workshop-1.png",
-      "/images/piri-workshop-3.png"
-    ]
-  },
-  {
-    "id": "broken-nose-rebuild",
-    "name": "Broken Nose Rebuild",
-    "type": "Heavy Repair",
-    "description": "Restore snapped or crushed noses with solid structural rebuilds.",
+    "id": "nose-fixing",
+    "name": "Nose Fixing",
+    "type": "Repair",
+    "description": "Nose cracks and broken tips rebuilt and sealed for strength.",
     "dimensions": {
       "length": "Any size",
       "width": "Front section",
       "thickness": "Matched to board",
       "volume": "N/A"
     },
-    "features": ["Core repair", "Fiberglass rebuild", "Hydrophobic seal"],
-    "waveConditions": "Snapped tips, deep impact fractures",
+    "features": ["Core rebuild", "Fiberglass layers", "Shape correction"],
+    "waveConditions": "Snapped nose, deep impact fracture, open foam",
     "surfLevel": "2 to 5 days",
-    "price": "From $45",
+    "price": "Ask how much",
     "image": "/images/piri-workshop-3.png",
     "gallery": [
       "/images/piri-workshop-3.png",
@@ -66,42 +44,20 @@
     ]
   },
   {
-    "id": "fin-box-repair",
-    "name": "Fin Box Repair",
-    "type": "Precision",
-    "description": "Replace or reset damaged fin boxes and restore alignment.",
+    "id": "sanded-finish",
+    "name": "Sanded Finish",
+    "type": "Finish",
+    "description": "Clean sanded finish after repair for a smooth ready-to-surf result.",
     "dimensions": {
       "length": "Any size",
-      "width": "Fin area",
+      "width": "Full or local area",
       "thickness": "Matched to board",
       "volume": "N/A"
     },
-    "features": ["Box reinstallation", "Accurate cant and toe", "Strong resin bonding"],
-    "waveConditions": "Loose plugs, cracked fin box zone, impact near fins",
-    "surfLevel": "1 to 3 days",
-    "price": "From $40",
-    "image": "/images/piri-workshop-1.png",
-    "gallery": [
-      "/images/piri-workshop-1.png",
-      "/images/piri-workshop-2.png",
-      "/images/piri-workshop-3.png"
-    ]
-  },
-  {
-    "id": "full-restoration",
-    "name": "Full Board Restoration",
-    "type": "Premium",
-    "description": "For boards with multiple damages needing full structural and cosmetic refresh.",
-    "dimensions": {
-      "length": "Any size",
-      "width": "Whole board",
-      "thickness": "Matched to board",
-      "volume": "N/A"
-    },
-    "features": ["Multi-zone reconstruction", "Deep drying process", "Final polish"],
-    "waveConditions": "Older boards with repeated repairs and moisture issues",
-    "surfLevel": "3 to 7 days",
-    "price": "From $80",
+    "features": ["Smooth touch", "Sanded finish", "Clean final pass"],
+    "waveConditions": "After structural repair and cosmetic refresh",
+    "surfLevel": "Same day to 2 days",
+    "price": "Ask how much",
     "image": "/images/piri-workshop-2.png",
     "gallery": [
       "/images/piri-workshop-2.png",

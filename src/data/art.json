@@ -10,6 +10,56 @@
     "additionalCost": "Varies by damage"
   },
   {
+    "id": "tee-shirt-1",
+    "name": "Piri Tee-shirt Front Print",
+    "technique": "Accessories Photo",
+    "description": "Official Piri's Ding Repair tee-shirt. Price: $15.",
+    "image": "/images/piri-shirt-1.png",
+    "colors": ["Black", "White"],
+    "timeToComplete": "In stock",
+    "additionalCost": "$15"
+  },
+  {
+    "id": "tee-shirt-2",
+    "name": "Piri Tee-shirt Closeup",
+    "technique": "Accessories Photo",
+    "description": "Closeup of logo print version available in shop.",
+    "image": "/images/piri-shirt-2.png",
+    "colors": ["Black", "White"],
+    "timeToComplete": "In stock",
+    "additionalCost": "$15"
+  },
+  {
+    "id": "tank-top-1",
+    "name": "Piri Tank Top",
+    "technique": "Accessories Photo",
+    "description": "Sleeveless version with front chest logo. Price: $15.",
+    "image": "/images/piri-shirt-3.png",
+    "colors": ["Black", "White"],
+    "timeToComplete": "In stock",
+    "additionalCost": "$15"
+  },
+  {
+    "id": "tee-shirt-back-1",
+    "name": "Piri Tee-shirt Back Print",
+    "technique": "Accessories Photo",
+    "description": "Large back print version with Punta Roca design.",
+    "image": "/images/piri-shirt-4.png",
+    "colors": ["Black", "White", "Blue"],
+    "timeToComplete": "In stock",
+    "additionalCost": "$15"
+  },
+  {
+    "id": "tank-top-back-1",
+    "name": "Piri Tank Top Back Print",
+    "technique": "Accessories Photo",
+    "description": "Large back print tank top version. Price: $15.",
+    "image": "/images/piri-shirt-5.png",
+    "colors": ["Black", "White", "Blue"],
+    "timeToComplete": "In stock",
+    "additionalCost": "$15"
+  },
+  {
     "id": "tools-materials",
     "name": "Tools & Materials",
     "technique": "Workshop Photo",

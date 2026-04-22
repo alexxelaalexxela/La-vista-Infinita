@@ -8,7 +8,6 @@ import Index from "./pages/Index";
 import Boards from "./pages/Boards";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import Custom from "./pages/Custom";
 // import Fins from "./pages/Fins";
 import Gallery from "./pages/Gallery";
 
@@ -32,7 +31,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/boards" element={<Boards />} />
-          <Route path="/custom" element={<Custom />} />
           {/* <Route path="/fins" element={<Fins />} /> */}
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
