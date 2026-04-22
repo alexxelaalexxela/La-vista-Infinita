@@ -34,6 +34,11 @@ const Footer = () => {
             <h4 className="font-serif text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
+                <Link to="/accessories" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
+                  Accessories
+                </Link>
+              </li>
+              <li>
                 <Link to="/gallery" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
                   Workshop Gallery
                 </Link>

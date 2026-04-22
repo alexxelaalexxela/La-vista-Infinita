@@ -27,8 +27,8 @@ const ServiceCards = () => {
       title: 'Accessories',
       description: 'Small essentials and Piri’s Ding Repair tee-shirts.',
       features: ['Wax, screws, longboard screw', 'FCS and Futures fin screws', 'Tee-shirt: $15', 'Ask how much on WhatsApp'],
-      cta: 'Ask Accessories Price',
-      action: () => window.open('https://wa.me/50376717527?text=Hi%20Piri%27s%20Ding%20Repair!%20How%20much%20for%20accessories%20(wax,%20longboard%20screw,%20FCS/Futures%20screws)%20and%20tee-shirts%20at%20$15%3F', '_blank')
+      cta: 'View Accessories',
+      action: () => window.location.assign('/accessories')
     }
   ];
 
@@ -70,13 +70,6 @@ const ServiceCards = () => {
                         </li>
                       ))}
                     </ul>
-                    {service.title === 'Accessories' && (
-                      <img
-                        src="/images/piri-shirt-2.png"
-                        alt="Piri's Ding Repair tee-shirt"
-                        className="rounded-md border mb-6 w-full h-40 object-cover"
-                      />
-                    )}
                     <Button 
                       onClick={service.action}
                       className="w-full group"
