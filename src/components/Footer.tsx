@@ -1,55 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Clock, Phone } from 'lucide-react';
-import piriLogo from '@/assets/piri-logo.png';
+import { MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const mapsUrl = 'https://maps.app.goo.gl/58JUeGmwcToqAT24A?g_st=aw';
 
   return (
     <footer className="bg-wood-dark text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand & Logo */}
-          <div className="md:col-span-1">
+          <div>
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src={piriLogo}
-                alt="Piry's Ding Repair logo"
-                className="h-10 w-10 rounded-full object-cover border border-white/20"
+                src="/images/la-vista-infinita-logo.png"
+                alt="La Vista Infinita logo"
+                className="h-12 w-12 rounded-full object-cover border border-white/20 bg-white"
               />
               <div>
-                <h3 className="font-serif text-xl font-bold">PIRY&apos;S DING REPAIR</h3>
-                <p className="text-sm opacity-80">SURFBOARD REPAIR WORKSHOP</p>
+                <h3 className="font-serif text-xl font-bold">LA VISTA INFINITA</h3>
+                <p className="text-sm opacity-80">SURF CITY — LA LIBERTAD</p>
               </div>
             </div>
-            <p className="text-sm opacity-80 mb-4">
-              Reliable ding repairs, lessons info, and accessories in La Libertad, El Salvador.
+            <p className="text-sm opacity-80">
+              A modern home a 10-minute walk from La Punta Roca, Surf City,
+              El Salvador.
             </p>
-            
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-serif text-lg font-semibold mb-4">Pages</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/accessories" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  Accessories
+                <Link to="/" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  Workshop Gallery
+                <Link to="/house" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
+                  House
                 </Link>
               </li>
               <li>
-                <a 
-                  href="https://wa.me/50376717527?text=Hi%20Piry%27s%20Ding%20Repair!%20I%20need%20help%20with%20my%20board."
-                  className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors"
-                >
-                  Ding Repairs
-                </a>
+                <Link to="/land" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
+                  Land
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -60,54 +62,35 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span className="opacity-80">
-                  <a href="https://www.google.com/maps/search/?api=1&query=FMPG%2B8F7%2C%205%20Ave%20Sur%2C%20La%20Libertad%2C%20El%20Salvador" target="_blank" rel="noreferrer" className="hover:underline">
-                    Piry&apos;s Ding Repair<br />
-                    FMPG+8F7, 5 Ave Sur<br />
-                    La Libertad, El Salvador
-                  </a>
-                </span>
+                <a
+                  href={mapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="opacity-80 hover:opacity-100 hover:underline"
+                >
+                  Surf City — La Libertad
+                  <br />
+                  El Salvador
+                </a>
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <a 
-                  href="https://wa.me/50376717527"
+                <a
+                  href="tel:+436765011864"
                   className="opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors"
                 >
-                  WhatsApp: +50376717527
+                  +43 676 5011864
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Hours */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold mb-4">Hours</h4>
-            <div className="flex items-start space-x-2 text-sm">
-              <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
-              <div className="opacity-80">
-                <div>Monday - Saturday</div>
-                <div>8:00 AM - 6:00 PM</div>
-                <div className="mt-2">Sunday</div>
-                <div>By WhatsApp request</div>
-              </div>
-            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-wood-medium mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm opacity-60">
-            © {currentYear} Piry&apos;s Ding Repair. All rights reserved.
+            © {currentYear} La Vista Infinita. All rights reserved.
           </p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link to="/privacy" className="text-sm opacity-60 hover:opacity-80 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/terms" className="text-sm opacity-60 hover:opacity-80 transition-colors">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

@@ -1,87 +1,104 @@
 import React from 'react';
+import { MapPin, Phone, ExternalLink } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
+  const mapsUrl = 'https://maps.app.goo.gl/58JUeGmwcToqAT24A?g_st=aw';
+  const phoneNumber = '+43 676 5011864';
+  const phoneHref = 'tel:+436765011864';
+  const whatsappHref = 'https://wa.me/436765011864';
+
+  // Embed URL for the exact coordinates: 13°29'17.2"N 89°18'52.8"W → 13.488111, -89.314667
+  const embedSrc =
+    'https://www.google.com/maps?q=13.488111,-89.314667&hl=en&z=16&output=embed';
+
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="pt-32 pb-20">
+      <main className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">Contact Piry&apos;s Ding Repair</h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Send your board photos on WhatsApp for an estimate and timeline.
-            </p>
-          </div>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
+                Contact & Location
+              </h1>
+              <p className="text-lg text-muted-foreground">
+                Get in touch or come visit La Vista Infinita.
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <MapPin className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <h3 className="font-serif text-xl font-semibold mb-2">Visit The Workshop</h3>
-                  <p className="text-muted-foreground">
-                    Piry&apos;s Ding Repair<br />
-                    FMPG+8F7, 5 Ave Sur<br />
-                    La Libertad, El Salvador
-                  </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Contact Info */}
+              <div className="space-y-6">
+                <div className="p-6 rounded-xl bg-sand-light border border-sand-medium">
+                  <div className="flex items-start space-x-4">
+                    <div className="p-3 rounded-full bg-primary/10">
+                      <Phone className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
+                        Phone
+                      </h3>
+                      <a
+                        href={phoneHref}
+                        className="text-lg text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        {phoneNumber}
+                      </a>
+                      <div className="mt-3">
+                        <Button asChild variant="outline" size="sm">
+                          <a href={whatsappHref} target="_blank" rel="noreferrer">
+                            WhatsApp
+                            <ExternalLink className="ml-2 h-4 w-4" />
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex items-start space-x-4">
-                <Phone className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <h3 className="font-serif text-xl font-semibold mb-2">WhatsApp</h3>
-                  <Button asChild variant="outline" className="mb-2">
-                    <a href="https://wa.me/50376717527">
-                      <MessageCircle className="w-4 h-4 mr-2" />
-                      +50376717527
-                    </a>
-                  </Button>
-                </div>
-              </div>
-
-              
-
-              <div className="flex items-start space-x-4">
-                <Clock className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <h3 className="font-serif text-xl font-semibold mb-2">Hours</h3>
-                  <div className="text-muted-foreground">
-                    <div>Monday - Saturday: 8:00 AM - 6:00 PM</div>
-                    <div>Sunday: By WhatsApp request</div>
+                <div className="p-6 rounded-xl bg-sand-light border border-sand-medium">
+                  <div className="flex items-start space-x-4">
+                    <div className="p-3 rounded-full bg-primary/10">
+                      <MapPin className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
+                        Location
+                      </h3>
+                      <p className="text-muted-foreground">
+                        Surf City — La Libertad
+                        <br />
+                        El Salvador
+                      </p>
+                      <p className="text-sm text-muted-foreground mt-2 font-mono">
+                        13°29&apos;17.2&quot;N 89°18&apos;52.8&quot;W
+                      </p>
+                      <div className="mt-3">
+                        <Button asChild variant="outline" size="sm">
+                          <a href={mapsUrl} target="_blank" rel="noreferrer">
+                            Open in Google Maps
+                            <ExternalLink className="ml-2 h-4 w-4" />
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Map */}
-            <div className="bg-sand-light rounded-lg p-6">
-              <h3 className="font-serif text-xl font-semibold mb-4">Find Us In La Libertad</h3>
-              <div className="aspect-video rounded-md overflow-hidden">
+              {/* Map */}
+              <div className="rounded-xl overflow-hidden shadow-xl min-h-[400px] h-full">
                 <iframe
-                  title="Piry's Ding Repair La Libertad Location"
-                  src="https://www.google.com/maps?q=FMPG%2B8F7%2C%205%20Ave%20Sur%2C%20La%20Libertad%2C%20El%20Salvador&z=15&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
+                  title="La Vista Infinita location"
+                  src={embedSrc}
+                  className="w-full h-full min-h-[400px] border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
                 />
-              </div>
-              <div className="mt-4">
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=FMPG%2B8F7%2C%205%20Ave%20Sur%2C%20La%20Libertad%2C%20El%20Salvador"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-primary underline"
-                >
-                  Open in Google Maps
-                </a>
               </div>
             </div>
           </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import piriLogo from '@/assets/piri-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,10 +9,9 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Repairs', path: '/boards' },
-    { name: 'Accessories', path: '/accessories' },
-    { name: 'Workshop', path: '/gallery' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'House', path: '/house' },
+    { name: 'Land', path: '/land' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -25,13 +23,13 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group" title="Go to homepage">
             <img
-              src={piriLogo}
-              alt="Piry's Ding Repair logo"
-              className="h-10 w-10 rounded-full object-cover border transition-transform group-hover:scale-105"
+              src="/images/la-vista-infinita-logo.png"
+              alt="La Vista Infinita logo"
+              className="h-12 w-12 rounded-full object-cover border transition-transform group-hover:scale-105 bg-white"
             />
             <div>
-              <h1 className="font-serif text-xl font-bold text-foreground">PIRY&apos;S DING REPAIR</h1>
-              <p className="text-xs text-muted-foreground -mt-1">LA LIBERTAD, EL SALVADOR</p>
+              <h1 className="font-serif text-xl font-bold text-foreground">LA VISTA INFINITA</h1>
+              <p className="text-xs text-muted-foreground -mt-1">SURF CITY — LA LIBERTAD</p>
             </div>
           </Link>
 
@@ -42,8 +40,8 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 className={`font-medium transition-colors hover:text-primary relative ${
-                  isActive(item.path) 
-                    ? 'text-primary' 
+                  isActive(item.path)
+                    ? 'text-primary'
                     : 'text-foreground'
                 }`}
               >
@@ -54,8 +52,6 @@ const Header = () => {
               </Link>
             ))}
           </nav>
-
-          
 
           {/* Mobile Menu Button */}
           <Button
@@ -86,7 +82,6 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              
             </div>
           </nav>
         )}

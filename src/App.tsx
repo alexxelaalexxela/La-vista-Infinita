@@ -5,12 +5,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
-import Boards from "./pages/Boards";
-import Accessories from "./pages/Accessories";
+import House from "./pages/House";
+import Land from "./pages/Land";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-// import Fins from "./pages/Fins";
-import Gallery from "./pages/Gallery";
 
 const queryClient = new QueryClient();
 
@@ -31,10 +29,8 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/boards" element={<Boards />} />
-          <Route path="/accessories" element={<Accessories />} />
-          {/* <Route path="/fins" element={<Fins />} /> */}
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/house" element={<House />} />
+          <Route path="/land" element={<Land />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
