@@ -1,25 +1,61 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useI18n } from '@/lib/i18n';
 
 const Hero = () => {
-  const { t } = useI18n();
+  const { language, t } = useI18n();
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [autoplayBlocked, setAutoplayBlocked] = useState(false);
+
+  useEffect(() => {
+    const videoEl = videoRef.current;
+    if (!videoEl) return;
+
+    // Force muted autoplay for browsers that require an explicit play() call.
+    videoEl.muted = true;
+    videoEl.defaultMuted = true;
+    videoEl.playsInline = true;
+
+    const startPlayback = async () => {
+      try {
+        await videoEl.play();
+        setAutoplayBlocked(false);
+      } catch {
+        setAutoplayBlocked(true);
+      }
+    };
+
+    startPlayback();
+  }, []);
 
   return (
     <section className="bg-background">
-      <div className="w-full bg-black">
+      <div className="w-full bg-black relative">
         <video
+          ref={videoRef}
           src="/videos/house.mp4"
           autoPlay
           muted
+          defaultMuted
           loop
           playsInline
+          preload="auto"
           className="w-full h-[42vh] sm:h-[52vh] md:h-[62vh] object-cover"
         >
           {t.common.browserNoVideoSupport}
         </video>
+
+        {autoplayBlocked && (
+          <button
+            type="button"
+            onClick={() => videoRef.current?.play()}
+            className="absolute bottom-4 right-4 rounded-full bg-black/70 text-white px-4 py-2 text-sm hover:bg-black/80 transition-colors"
+          >
+            {language === 'es' ? 'Reproducir video' : 'Play video'}
+          </button>
+        )}
       </div>
 
       <div className="text-center max-w-4xl mx-auto px-4 py-12 md:py-16">
