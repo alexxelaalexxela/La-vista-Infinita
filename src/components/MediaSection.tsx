@@ -6,9 +6,19 @@ type MediaSectionProps = {
   videoSrc: string;
   videoPoster?: string;
   images: { src: string; alt: string }[];
+  photosTitle?: string;
+  browserNoVideoSupportText?: string;
 };
 
-const MediaSection = ({ title, subtitle, videoSrc, videoPoster, images }: MediaSectionProps) => {
+const MediaSection = ({
+  title,
+  subtitle,
+  videoSrc,
+  videoPoster,
+  images,
+  photosTitle = 'Photos',
+  browserNoVideoSupportText = 'Your browser does not support the video tag.',
+}: MediaSectionProps) => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -33,13 +43,13 @@ const MediaSection = ({ title, subtitle, videoSrc, videoPoster, images }: MediaS
               playsInline
               className="w-full h-auto aspect-video"
             >
-              Your browser does not support the video tag.
+              {browserNoVideoSupportText}
             </video>
           </div>
 
           {/* Pictures */}
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6 text-center">
-            Photos
+            {photosTitle}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {images.map((img, idx) => (

@@ -3,12 +3,14 @@ import { MapPin, Phone, ExternalLink } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { useI18n } from '@/lib/i18n';
 
 const Contact = () => {
+  const { language } = useI18n();
   const mapsUrl = 'https://maps.app.goo.gl/58JUeGmwcToqAT24A?g_st=aw';
-  const phoneNumber = '+43 676 5011864';
-  const phoneHref = 'tel:+436765011864';
-  const whatsappHref = 'https://wa.me/436765011864';
+  const phoneNumber = '+50379526551';
+  const phoneHref = 'tel:+50379526551';
+  const whatsappHref = 'https://wa.me/50379526551';
 
   // Embed URL for the exact coordinates: 13°29'17.2"N 89°18'52.8"W → 13.488111, -89.314667
   const embedSrc =
@@ -22,10 +24,12 @@ const Contact = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Contact & Location
+                {language === 'es' ? 'Contacto y ubicacion' : 'Contact/Location'}
               </h1>
               <p className="text-lg text-muted-foreground">
-                Get in touch or come visit La Vista Infinita.
+                {language === 'es'
+                  ? 'Escribenos o visita La Vista Infinita.'
+                  : 'Get in touch or come visit La Vista Infinita.'}
               </p>
             </div>
 

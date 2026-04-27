@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone } from 'lucide-react';
+import { useI18n } from '@/lib/i18n';
 
 const Footer = () => {
+  const { t } = useI18n();
   const currentYear = new Date().getFullYear();
   const mapsUrl = 'https://maps.app.goo.gl/58JUeGmwcToqAT24A?g_st=aw';
 
@@ -31,26 +33,31 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg font-semibold mb-4">Pages</h4>
+            <h4 className="font-serif text-lg font-semibold mb-4">{t.common.pages}</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  Home
+                  {t.nav.home}
                 </Link>
               </li>
               <li>
                 <Link to="/house" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  House
+                  {t.nav.house}
                 </Link>
               </li>
               <li>
                 <Link to="/land" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  Land
+                  {t.nav.extraLand}
+                </Link>
+              </li>
+              <li>
+                <Link to="/area-around" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
+                  {t.nav.areaAround}
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  Contact
+                  {t.nav.contactLocation}
                 </Link>
               </li>
             </ul>
@@ -58,7 +65,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-serif text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="font-serif text-lg font-semibold mb-4">{t.common.contact}</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
@@ -76,10 +83,10 @@ const Footer = () => {
               <li className="flex items-center space-x-2 text-sm">
                 <Phone className="h-4 w-4 flex-shrink-0" />
                 <a
-                  href="tel:+436765011864"
+                  href="tel:+50379526551"
                   className="opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors"
                 >
-                  +43 676 5011864
+                  +50379526551
                 </a>
               </li>
             </ul>
