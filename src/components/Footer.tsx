@@ -4,7 +4,7 @@ import { MapPin, Phone } from 'lucide-react';
 import { useI18n } from '@/lib/i18n';
 
 const Footer = () => {
-  const { t } = useI18n();
+  const { language, t } = useI18n();
   const currentYear = new Date().getFullYear();
   const mapsUrl = 'https://maps.app.goo.gl/58JUeGmwcToqAT24A?g_st=aw';
 
@@ -26,8 +26,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm opacity-80">
-              A modern home a 10-minute walk from La Punta Roca, Surf City,
-              El Salvador.
+              {language === 'es'
+                ? 'Una casa moderna a 10 minutos caminando de La Punta Roca, Surf City, El Salvador.'
+                : 'A modern home a 10-minute walk from La Punta Roca, Surf City, El Salvador.'}
             </p>
           </div>
 
@@ -96,7 +97,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-wood-medium mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm opacity-60">
-            © {currentYear} La Vista Infinita. All rights reserved.
+            © {currentYear} La Vista Infinita.{' '}
+            {language === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
           </p>
         </div>
       </div>

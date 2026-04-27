@@ -43,7 +43,7 @@ const Contact = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
-                        Phone
+                        {language === 'es' ? 'Telefono' : 'Phone'}
                       </h3>
                       <a
                         href={phoneHref}
@@ -70,7 +70,7 @@ const Contact = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="font-serif text-xl font-semibold text-foreground mb-1">
-                        Location
+                        {language === 'es' ? 'Ubicacion' : 'Location'}
                       </h3>
                       <p className="text-muted-foreground">
                         Surf City — La Libertad
@@ -83,7 +83,7 @@ const Contact = () => {
                       <div className="mt-3">
                         <Button asChild variant="outline" size="sm">
                           <a href={mapsUrl} target="_blank" rel="noreferrer">
-                            Open in Google Maps
+                            {language === 'es' ? 'Abrir en Google Maps' : 'Open in Google Maps'}
                             <ExternalLink className="ml-2 h-4 w-4" />
                           </a>
                         </Button>
