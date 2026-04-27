@@ -35,13 +35,14 @@ const Hero = () => {
       <div className="w-full bg-black relative">
         <video
           ref={videoRef}
-          src="/videos/house.mp4"
+          src="/videos/house-hero.mp4"
           autoPlay
           muted
           defaultMuted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
+          poster="/images/hero-house1.jpg"
           className="w-full h-[42vh] sm:h-[52vh] md:h-[62vh] object-cover"
         >
           {t.common.browserNoVideoSupport}
