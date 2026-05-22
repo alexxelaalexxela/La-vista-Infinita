@@ -35,7 +35,7 @@ const Hero = () => {
       <div className="w-full bg-black relative">
         <video
           ref={videoRef}
-          src="/videos/house-hero.mp4"
+          src="/videos/home-hero.mp4"
           autoPlay
           muted
           defaultMuted

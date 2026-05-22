@@ -27,8 +27,8 @@ const Footer = () => {
             </div>
             <p className="text-sm opacity-80">
               {language === 'es'
-                ? 'Una casa moderna a 10 minutos caminando de La Punta Roca, Surf City, El Salvador.'
-                : 'A modern home a 10-minute walk from La Punta Roca, Surf City, El Salvador.'}
+                ? 'Una casa de lujo a 10 minutos caminando de Punta Roca, Surf City, El Salvador.'
+                : 'A luxury home a 10-minute walk from Punta Roca, Surf City, El Salvador.'}
             </p>
           </div>
 
