@@ -6,7 +6,7 @@ import { useI18n } from '@/lib/i18n';
 const House = () => {
   const { t } = useI18n();
 
-  const images = Array.from({ length: 18 }, (_, i) => ({
+  const images = Array.from({ length: 123 }, (_, i) => ({
     src: `/images/house-${i + 1}.jpg`,
     alt: `Vista Infinita view ${i + 1}`,
   }));
@@ -31,9 +31,10 @@ const House = () => {
               <div className="mb-12 rounded-xl overflow-hidden shadow-xl bg-black">
                 <video
                   src="/videos/house-main.mp4"
-                  poster="/images/house-1.jpg"
+                  poster="/images/house-main-poster.jpg"
                   controls
                   playsInline
+                  preload="metadata"
                   className="w-full h-auto aspect-video"
                 >
                   {t.common.browserNoVideoSupport}
@@ -104,6 +105,7 @@ const House = () => {
                   <div className="rounded-xl overflow-hidden shadow-xl bg-black w-full max-w-xs">
                     <video
                       src="/videos/house-tour-day.mp4"
+                      poster="/images/house-tour-day-poster.jpg"
                       controls
                       playsInline
                       preload="metadata"
@@ -120,6 +122,7 @@ const House = () => {
                   <div className="rounded-xl overflow-hidden shadow-xl bg-black w-full max-w-xs">
                     <video
                       src="/videos/house-tour-night.mp4"
+                      poster="/images/house-tour-night-poster.jpg"
                       controls
                       playsInline
                       preload="metadata"

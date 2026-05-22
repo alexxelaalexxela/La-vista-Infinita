@@ -6,12 +6,10 @@ import { useI18n } from '@/lib/i18n';
 const AreaAround = () => {
   const { t } = useI18n();
 
-  const gallery = [
-    { src: '/images/heros.jpg', alt: 'Ocean and coastline view' },
-    { src: '/images/hero-house1.jpg', alt: 'Street and neighborhood view' },
-    { src: '/images/land-3.jpg', alt: 'Natural surroundings near the property' },
-    { src: '/images/house-6.jpg', alt: 'Area around the house' },
-  ];
+  const gallery = Array.from({ length: 11 }, (_, i) => ({
+    src: `/images/area-${i + 1}.jpg`,
+    alt: `Surf City surroundings ${i + 1}`,
+  }));
 
   return (
     <div className="min-h-screen">
@@ -28,13 +26,18 @@ const AreaAround = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
               {gallery.map((item) => (
                 <div
                   key={item.src}
                   className="overflow-hidden rounded-xl shadow-md bg-sand-light border border-sand-medium"
                 >
-                  <img src={item.src} alt={item.alt} className="w-full h-72 object-cover" />
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    loading="lazy"
+                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
               ))}
             </div>
