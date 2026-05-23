@@ -42,7 +42,7 @@ const Hero = () => {
           loop
           playsInline
           preload="metadata"
-          poster="/images/hero-house1.jpg"
+          poster="/images/home-hero-poster.jpg"
           className="w-full h-[42vh] sm:h-[52vh] md:h-[62vh] object-cover"
         >
           {t.common.browserNoVideoSupport}
