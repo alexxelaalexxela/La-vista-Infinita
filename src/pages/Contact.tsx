@@ -7,14 +7,14 @@ import { useI18n } from '@/lib/i18n';
 
 const Contact = () => {
   const { language } = useI18n();
-  const mapsUrl = 'https://maps.app.goo.gl/58JUeGmwcToqAT24A?g_st=aw';
+  const mapsUrl = 'https://maps.app.goo.gl/H9NXNBzfHQJU7t4v8?g_st=ac';
   const phoneNumber = '+50379526551';
   const phoneHref = 'tel:+50379526551';
   const whatsappHref = 'https://wa.me/50379526551';
 
-  // Embed URL for the exact coordinates: 13°29'17.2"N 89°18'52.8"W → 13.488111, -89.314667
+  // Embed URL for the exact coordinates: 13°29'18.2"N 89°18'52.1"W → 13.488393, -89.314484
   const embedSrc =
-    'https://www.google.com/maps?q=13.488111,-89.314667&hl=en&z=16&output=embed';
+    'https://www.google.com/maps?q=13.488393,-89.314484&hl=en&z=16&output=embed';
 
   return (
     <div className="min-h-screen">
@@ -78,7 +78,7 @@ const Contact = () => {
                         El Salvador
                       </p>
                       <p className="text-sm text-muted-foreground mt-2 font-mono">
-                        13°29&apos;17.2&quot;N 89°18&apos;52.8&quot;W
+                        13°29&apos;18.2&quot;N 89°18&apos;52.1&quot;W
                       </p>
                       <div className="mt-3">
                         <Button asChild variant="outline" size="sm">

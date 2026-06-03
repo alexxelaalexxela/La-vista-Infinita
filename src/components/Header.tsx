@@ -11,8 +11,6 @@ const Header = () => {
 
   const navItems = [
     { name: t.nav.home, path: '/' },
-    { name: t.nav.house, path: '/house' },
-    { name: t.nav.extraLand, path: '/land' },
     { name: t.nav.areaAround, path: '/area-around' },
     { name: t.nav.contactLocation, path: '/contact' },
   ];

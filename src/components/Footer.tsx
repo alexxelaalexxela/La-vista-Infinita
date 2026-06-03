@@ -6,7 +6,7 @@ import { useI18n } from '@/lib/i18n';
 const Footer = () => {
   const { language, t } = useI18n();
   const currentYear = new Date().getFullYear();
-  const mapsUrl = 'https://maps.app.goo.gl/58JUeGmwcToqAT24A?g_st=aw';
+  const mapsUrl = 'https://maps.app.goo.gl/H9NXNBzfHQJU7t4v8?g_st=ac';
 
   return (
     <footer className="bg-wood-dark text-white">
@@ -39,16 +39,6 @@ const Footer = () => {
               <li>
                 <Link to="/" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
                   {t.nav.home}
-                </Link>
-              </li>
-              <li>
-                <Link to="/house" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  {t.nav.house}
-                </Link>
-              </li>
-              <li>
-                <Link to="/land" className="text-sm opacity-80 hover:opacity-100 hover:text-ocean-light transition-colors">
-                  {t.nav.extraLand}
                 </Link>
               </li>
               <li>

@@ -3,10 +3,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
-import House from "./pages/House";
-import Land from "./pages/Land";
 import AreaAround from "./pages/AreaAround";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -30,10 +28,11 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/house" element={<House />} />
-          <Route path="/land" element={<Land />} />
           <Route path="/area-around" element={<AreaAround />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Redirect old routes back to home */}
+          <Route path="/house" element={<Navigate to="/" replace />} />
+          <Route path="/land" element={<Navigate to="/" replace />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
