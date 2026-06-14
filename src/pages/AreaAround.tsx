@@ -6,7 +6,7 @@ import { useI18n } from '@/lib/i18n';
 const AreaAround = () => {
   const { t } = useI18n();
 
-  const gallery = Array.from({ length: 11 }, (_, i) => ({
+  const gallery = Array.from({ length: 12 }, (_, i) => ({
     src: `/images/area-${i + 1}.jpg`,
     alt: `Surf City surroundings ${i + 1}`,
   }));
